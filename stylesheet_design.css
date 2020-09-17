@@ -168,7 +168,7 @@ body {
 	padding: 0 0 5% 6.5%;
 }
 
-.OneOneA .card{
+.OneOneA .card {
 	width: 100%;
 }
 
@@ -185,6 +185,10 @@ body {
 @media(max-width:500px) {
 	.OneOne {
 		padding: 5%;
+	}
+
+	.OneOneA {
+		padding: 0 5% 0 5%;
 	}
 
 	.OneTwo {
