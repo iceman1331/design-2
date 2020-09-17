@@ -154,10 +154,22 @@ body {
 
 .ZeroOne {
 	padding: 5% 10% 0 10%;
+	margin: auto;
 }
 
 .ZeroTwo {
 	padding: 1% 10% 0 10%;
+	margin: auto;
+}
+
+@media(max-width:500px) {
+	.ZeroOne {
+		padding: 2% 8% 0 8%;
+	}
+
+	.ZeroTwo {
+		padding: 1% 8% 0 8%;
+	}
 }
 
 .OneOne {
@@ -507,6 +519,7 @@ sup {
 }
 
 .centred-child {
+	padding: 0 5% 0 5%;
 	text-align: center;
 }
 
@@ -527,11 +540,8 @@ sup {
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-	width: 42%;
-	margin-left: 1%;
-	margin-right: 1%;
-	margin-top: 0;
-	margin-bottom: 0;
+	width: 50%;
+	margin: 0 1% 0 1%;
 	text-align: center;
 }
 
