@@ -239,15 +239,19 @@
 		</div>
 
 
+
+
+
 		<div class="col-sm-6">
 			<div class="OneTwo">
-				<div class="container">
-					<img src="imgs/final_transparent_cropped_mirror.png" class="img-fluid" alt="Responsive image">
+				<div class='animatedParent'>
+					<div class="animated bounceInRight container">
+						<img src="imgs/final_transparent_cropped_mirror.png" class="img-fluid" alt="Responsive image">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 
 
 
@@ -272,7 +276,7 @@
 
 
 
-		
+
 
 
 		<div class="col-sm-7">
@@ -756,17 +760,17 @@
 		/*Button reveal*/
 
 	</script>
-	
-	
+
+
 	<script>
-			video.addEventListener('loadedmetadata', function() {
-				if (video.buffered.length === 0) return;
+		video.addEventListener('loadedmetadata', function() {
+			if (video.buffered.length === 0) return;
 
-				var bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
-				console.log(bufferedSeconds + ' seconds of video are ready to play!');
-			});
+			var bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
+			console.log(bufferedSeconds + ' seconds of video are ready to play!');
+		});
 
-		</script>
+	</script>
 
 
 
