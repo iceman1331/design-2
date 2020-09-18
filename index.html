@@ -15,7 +15,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no" />
 	<title>Design</title>
-	<link rel=" preload" href="loader.mp4" as="video">
+	<link rel="preload" href="loader.mp4" as="video" type="video/mp4">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
 	<link rel="stylesheet" href="bootstrap.min.css" />
@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="stylesheet_design.css" />
 
 	<script src="NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
-	<script src="NavBar/bootstrap.min.js" charset="utf-8"></script>
+	<script src="NavBar/js/bootstrap.min.js" charset="utf-8"></script>
 
 
 	<link rel="stylesheet" href="Pre-footer_buttons/footer_button_style.css" />
@@ -38,6 +38,10 @@
 </head>
 
 <body>
+
+
+
+
 	<div class="loader">
 		<video autoplay muted loop src="loader.mp4"></video>
 	</div>
@@ -266,11 +270,16 @@
 			</div>
 		</div>
 
+
+
+		
+
+
 		<div class="col-sm-7">
 			<div class="TwoOne">
 
 				<div class="embed-responsive embed-responsive-16by9">
-					<video autoplay muted playsinline class="embed-responsive-item" src="imgs/Desc%20Vid-1.mp4" allowfullscreen></video>
+					<video autoplay muted playsinline id="video" preload="auto" src="imgs/Desc%20Vid-1.mp4" class="embed-responsive-item"></video>
 				</div>
 
 				<div class="colp-containerOne collapsible-container">
@@ -747,6 +756,18 @@
 		/*Button reveal*/
 
 	</script>
+	
+	
+	<script>
+			video.addEventListener('loadedmetadata', function() {
+				if (video.buffered.length === 0) return;
+
+				var bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
+				console.log(bufferedSeconds + ' seconds of video are ready to play!');
+			});
+
+		</script>
+
 
 
 	<script src="css3-animate-it.js"></script>
